@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'resume-viewer';
+  isLoading=true;
 doc: string="https://resume-file-collection.s3.ap-south-1.amazonaws.com/ankit.docx";
 pdf:string="https://resume-file-collection.s3.ap-south-1.amazonaws.com/ankit.pdf";
+
+fileLoaded(){
+  this.isLoading=false;
+}
 }
